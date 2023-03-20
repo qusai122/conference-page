@@ -61,7 +61,7 @@ const programs = [
 document.querySelector('.program-holder').innerHTML = programs.map((program) => `
     <div class="container p-2 ">
         <div class="d-flex align-items-center program-card p-2">
-            <img src=${program.icon} width="50px" height="50px" alt="lecture">
+            <img class= "prog-icon" src=${program.icon} width="50px" height="50px" alt="lecture">
             <h4 class="program-title px-2">${program.title}</h4>
             <span class="px-1 text-white">${program.message}</span>
         </div>

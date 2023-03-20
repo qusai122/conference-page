@@ -8,6 +8,7 @@ body {
   --primary-color: #ec5242;
   --dark-color: #272a31;
   --light-color: #d3d3d3;
+  --white-color: #fff;
 
   overflow-x: hidden;
 }
@@ -79,27 +80,40 @@ a {
   background-image: url("./assits/hello-cars.jpg");
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
-  background-size: 100%;
+  background-size: cover;
+  background-color: var(--light-color);
   padding-top: 32px;
+  font-size: 24px;
+}
+
+.no-background {
+  background-size: 100%;
+}
+
+.email {
+  font-size: 18px;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: var(--primary-color);
+  font-size: 36px;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: var(--primary-color);
+  font-size: 24px;
 }
 
 .hello-dicreption {
-  background-color: var(--light-color);
+  background-color: var(--white-color);
   opacity: 0.9;
   border-radius: 8px;
   padding: 4px;
+  font-size: 18px;
 }
 
 ul {
@@ -127,16 +141,20 @@ ul {
   color: white;
   text-align: center;
   font-size: 24px;
+  margin: 0;
 }
 
 .section-title-black {
   color: black;
   text-align: center;
   font-size: 24px;
+  margin: 0;
 }
 
 .title-line {
   border: 1px solid rgb(255, 64, 0);
+  width: 40%;
+  margin-bottom: 30px;
 }
 
 .join-btn {
@@ -171,6 +189,14 @@ ul {
 .text-center {
   justify-content: center;
   justify-items: center;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .program-card {

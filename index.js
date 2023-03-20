@@ -30,25 +30,30 @@ RemoveMenu(choose);
 
 const programs = [
   {
-    title: 'BMW M3',
+    title: 'lecture',
     message: 'Listen to the speakers from various countries.',
-    icon: 'assits/second-car.jpg',
+    icon: 'assits/lecture.png',
   },
   {
-    title: 'BMW M4',
+    title: 'exhibition',
     message: 'Listen to the speakers from various countries.',
-    icon: 'assits/second-car.jpg',
+    icon: 'assits/exhibition.png',
   },
   {
-    title: 'BMW M5',
+    title: 'forum',
     message: 'Listen to the speakers from various countries.',
-    icon: 'assits/second-car.jpg',
+    icon: 'assits/forum.png',
   },
   {
-    title: 'NEW M8',
+    title: 'workshop',
     message: 'Listen to the speakers from various countries.',
-    icon: 'assits/second-car.jpg',
+    icon: 'assits/workshop.png',
   },
+  {
+    title: 'ignite',
+    message: 'Listen to the speakers from various countries.',
+    icon: 'assits/ignite.png',
+  }
 
 ];
 

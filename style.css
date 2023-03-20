@@ -125,10 +125,14 @@ ul {
 
 .section-title-white {
   color: white;
+  text-align: center;
+  font-size: 24px;
 }
 
 .section-title-black {
   color: black;
+  text-align: center;
+  font-size: 24px;
 }
 
 .title-line {
@@ -139,21 +143,54 @@ ul {
   background-color: rgb(255, 64, 0);
   color: #fff;
   text-decoration: none;
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  border: var(--primary-color);
+}
+
+.more-btn {
+  background-color: #fff;
+  color: var(--dark-color);
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  border: 0px;
+}
+
+.more-btn-div {
+  border: 1px solid var(--dark-color);
+}
+.btn-text {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.text-center {
+  justify-content: center;
+  justify-items: center;
 }
 
 .program-card {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   background-color: rgb(90, 90, 90, 0.7);
   padding: 8px;
   border-radius: 12px;
+  gap: 12px;
 }
 
 .program-holder {
   display: flex;
   gap: 8px;
   overflow-x: scroll;
+  flex-direction: column;
+}
+
+.text-white {
+  color: var(--light-color);
 }
 
 .speaker-card {
@@ -170,6 +207,7 @@ ul {
 
 .main-speaker {
   padding-left: 25px;
+  padding-right: 25px;
 }
 
 .speaker-img {

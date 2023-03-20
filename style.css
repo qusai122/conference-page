@@ -1,0 +1,37 @@
+
+
+body {
+  background-color: #e5e5e5;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  --primary-color: #ec5242;
+  --dark-color: #272a31;
+  --light-color: #d3d3d3;
+}
+
+.fixed-top {
+  position: fixed;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+.menu {
+    padding: 8px;
+  font-size: 1.3rem;
+}
+
+.menu-list {
+  display: none;
+}
+.fa-bars {
+  color: var(--dark-color);
+}

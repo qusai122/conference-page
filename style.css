@@ -104,3 +104,60 @@ ul {
   color: var(--dark-color);
   font-size: 20px;
 }
+
+.main-program {
+    background-image: url("assits/first-car.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+  }
+
+  .section-title-white {
+    color: white;
+  }
+
+  .section-title-black {
+    color: black;
+  }
+
+  .title-line {
+    border: 1px solid rgb(255, 64, 0);
+  }
+
+  .join-btn {
+    background-color: rgb(255, 64, 0);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .program-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(90, 90, 90, 0.7);
+    padding-left: 8px;
+  }
+
+  .program-holder {
+    display: flex;
+    gap: 8px;
+  }
+
+  .speaker-card {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image-holder {
+    background-size: 30%;
+    background-position: 0 10px;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  .speaker-img {
+    border-radius: 60%;
+    margin-right: 20px;
+  }

@@ -155,12 +155,13 @@ ul {
   text-decoration: none;
   width: 100%;
   height: 50px;
-  border: 0px;
+  border: 0;
 }
 
 .more-btn-div {
   border: 1px solid var(--dark-color);
 }
+
 .btn-text {
   font-size: 24px;
   line-height: 30px;
@@ -185,7 +186,6 @@ ul {
 .program-holder {
   display: flex;
   gap: 8px;
-  overflow-x: scroll;
   flex-direction: column;
 }
 

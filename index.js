@@ -53,7 +53,7 @@ const programs = [
     title: 'ignite',
     message: 'Listen to the speakers from various countries.',
     icon: 'assits/ignite.png',
-  }
+  },
 
 ];
 

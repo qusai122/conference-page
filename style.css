@@ -3,10 +3,14 @@
 body {
   background-color: #e5e5e5;
   height: auto;
-  font-family: "Inter", sans-serif;
+  font-family: 'Lato', sans-serif;
   --primary-color: #ec5242;
   --dark-color: #272a31;
   --light-color: #d3d3d3;
+}
+
+a {
+    all: unset;
 }
 
 .fixed-top {
@@ -35,3 +39,66 @@ body {
 .fa-bars {
   color: var(--dark-color);
 }
+
+.mobile-nav {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  display: none;
+}
+
+.close-button {
+  color: #fff;
+  font-size: 34px;
+  padding-top: 50px;
+  float: right;
+  margin-left: 85%;
+}
+
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+  }
+
+.hello-section {
+    padding: 25px;
+    background-image: url("./assits/hello-cars.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-size: 100%;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    color: var(--primary-color);
+}
+
+.hello-dicreption {
+    background-color: var(--light-color);
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.mobile-nav-item {
+    color: var(--dark-color);
+     font-size: 20px;
+}
+

@@ -2,11 +2,14 @@
 body {
   background-color: #e5e5e5;
   height: auto;
+  margin: 0;
   font-family: 'Lato', sans-serif;
 
   --primary-color: #ec5242;
   --dark-color: #272a31;
   --light-color: #d3d3d3;
+
+  overflow-x: hidden;
 }
 
 a {
@@ -27,6 +30,12 @@ a {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: transparent;
+  width: 95%;
+}
+
+.logo {
+  width: 60px;
+  padding-left: 20px;
 }
 
 .menu {
@@ -39,7 +48,7 @@ a {
 }
 
 .fa-bars {
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 .mobile-nav {
@@ -71,6 +80,7 @@ a {
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   background-size: 100%;
+  padding-top: 32px;
 }
 
 h2 {
@@ -106,58 +116,73 @@ ul {
 }
 
 .main-program {
-    background-image: url("assits/first-car.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 25px;
-  }
+  background-image: url("assits/first-car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+}
 
-  .section-title-white {
-    color: white;
-  }
+.section-title-white {
+  color: white;
+}
 
-  .section-title-black {
-    color: black;
-  }
+.section-title-black {
+  color: black;
+}
 
-  .title-line {
-    border: 1px solid rgb(255, 64, 0);
-  }
+.title-line {
+  border: 1px solid rgb(255, 64, 0);
+}
 
-  .join-btn {
-    background-color: rgb(255, 64, 0);
-    color: #fff;
-    text-decoration: none;
-  }
+.join-btn {
+  background-color: rgb(255, 64, 0);
+  color: #fff;
+  text-decoration: none;
+}
 
-  .program-card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(90, 90, 90, 0.7);
-    padding-left: 8px;
-  }
+.program-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(90, 90, 90, 0.7);
+  padding: 8px;
+  border-radius: 12px;
+}
 
-  .program-holder {
-    display: flex;
-    gap: 8px;
-  }
+.program-holder {
+  display: flex;
+  gap: 8px;
+  overflow-x: scroll;
+}
 
-  .speaker-card {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .image-holder {
-    background-size: 30%;
-    background-position: 0 10px;
-    background-repeat: no-repeat;
-    padding-top: 20px;
-    padding-left: 15px;
-  }
+.speaker-card {
+  display: flex;
+  flex-direction: row;
+}
 
-  .speaker-img {
-    border-radius: 60%;
-    margin-right: 20px;
-  }
+.image-holder {
+  background-size: 30%;
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.main-speaker {
+  padding-left: 25px;
+}
+
+.speaker-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 60%;
+  margin-right: 20px;
+}
+
+.speaker-about {
+  color: var(--dark-color);
+}
+
+.speaker-name {
+  color: var(--primary-color);
+}

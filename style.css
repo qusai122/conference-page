@@ -407,6 +407,6 @@ ul {
     }
 
     .more-btn-div {
-      ma
+      display: none;
     }
 }

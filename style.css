@@ -281,3 +281,33 @@ ul {
   border-width: 0;
   color: var(--light-color);
 }
+
+.summit-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  background-repeat:no-repeat ;
+  background-size: cover;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-color: var(--primary-color);
+}
+
+.summit-year {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--white-color);
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.summit-message {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white-color);
+}

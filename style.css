@@ -223,6 +223,12 @@ ul {
   flex-direction: column;
 }
 
+.summits-holder{
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
 .text-white {
   color: var(--light-color);
 }

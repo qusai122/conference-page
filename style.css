@@ -2,11 +2,15 @@
 body {
   background-color: #e5e5e5;
   height: auto;
+  margin: 0;
   font-family: 'Lato', sans-serif;
 
   --primary-color: #ec5242;
   --dark-color: #272a31;
   --light-color: #d3d3d3;
+  --white-color: #fff;
+
+  overflow-x: hidden;
 }
 
 a {
@@ -27,6 +31,12 @@ a {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: transparent;
+  width: 95%;
+}
+
+.logo {
+  width: 60px;
+  padding-left: 20px;
 }
 
 .menu {
@@ -39,7 +49,7 @@ a {
 }
 
 .fa-bars {
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 .mobile-nav {
@@ -70,26 +80,40 @@ a {
   background-image: url("./assits/hello-cars.jpg");
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
+  background-size: cover;
+  background-color: var(--light-color);
+  padding-top: 32px;
+  font-size: 24px;
+}
+
+.no-background {
   background-size: 100%;
+}
+
+.email {
+  font-size: 18px;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: var(--primary-color);
+  font-size: 36px;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: var(--primary-color);
+  font-size: 24px;
 }
 
 .hello-dicreption {
-  background-color: var(--light-color);
+  background-color: var(--white-color);
   opacity: 0.9;
   border-radius: 8px;
   padding: 4px;
+  font-size: 18px;
 }
 
 ul {
@@ -103,4 +127,185 @@ ul {
 .mobile-nav-item {
   color: var(--dark-color);
   font-size: 20px;
+}
+
+.main-program {
+  background-image: url("assits/first-car.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+}
+
+.section-title-white {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.section-title-black {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+.bmw-summit-img {
+  width: 100%;
+}
+
+.title-line {
+  border: 1px solid rgb(255, 64, 0);
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.join-btn {
+  background-color: rgb(255, 64, 0);
+  color: #fff;
+  text-decoration: none;
+  width: 70%;
+  height: 50px;
+  border: var(--primary-color);
+}
+
+.more-btn {
+  background-color: #fff;
+  color: var(--dark-color);
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  border: 0;
+}
+
+.more-btn-div {
+  border: 1px solid var(--dark-color);
+}
+
+.btn-text {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.text-center {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.program-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(90, 90, 90, 0.7);
+  padding: 8px;
+  border-radius: 12px;
+  gap: 12px;
+}
+
+.program-holder {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.summits-holder {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.text-white {
+  color: var(--light-color);
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-holder {
+  background-size: 30%;
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.main-speaker {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.speaker-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 60%;
+  margin-right: 20px;
+}
+
+.speaker-about {
+  color: var(--dark-color);
+}
+
+.speaker-name {
+  color: var(--primary-color);
+}
+
+.creative-section {
+  background-color: var(--white-color);
+  padding: 25px;
+}
+
+.past-summiit {
+  background-color: var(--white-color);
+  padding: 25px;
+}
+
+.section-line {
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  border-width: 0;
+  color: var(--light-color);
+}
+
+.summit-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  background-blend-mode: soft-light;
+  background-color: var(--primary-color);
+}
+
+.summit-year {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--white-color);
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.summit-message {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white-color);
 }

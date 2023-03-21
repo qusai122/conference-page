@@ -19,6 +19,7 @@ a {
 
 .fixed-top {
   position: fixed;
+  width: 100%;
 }
 
 .navbar {
@@ -28,10 +29,11 @@ a {
   justify-content: space-between;
   position: fixed;
   height: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: transparent;
-  width: 95%;
+  width: 90%;
 }
 
 .logo {
@@ -216,6 +218,10 @@ ul {
   gap: 12px;
 }
 
+.program-title {
+  color: var(--primary-color);
+}
+
 .program-holder {
   display: flex;
   gap: 8px;
@@ -230,6 +236,7 @@ ul {
 
 .text-white {
   color: var(--light-color);
+  text-align: center;
 }
 
 .speaker-card {
@@ -308,4 +315,98 @@ ul {
   font-weight: 700;
   font-size: 24px;
   color: var(--white-color);
+}
+
+.navbar-black {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    background-color: var(--white-color);
+    height: 72px;
+  }
+
+  .navbar-black {
+    display: inline;
+    width: 100%;
+    height: 24px;
+    background-color: var(--dark-color);
+    background: fixed;
+    flex-direction: column;
+
+  }
+  .navbar-black ul {
+  flex-direction: row;
+  display:flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 4px;
+  padding-right: 25px;
+  margin: 0;
+  background-color: var(--dark-color);
+  }
+  .navbar-black li {
+    color: var(--white-color);
+    }
+
+    h3 {
+      margin-top: 180px;
+      font-weight: 500;
+      font-size: 48px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 56px;
+    }
+
+    .hello-section {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+
+    .hello-dicreption {
+      width: 60%;
+    }
+
+    .program-holder {
+      flex-direction: row;
+      overflow-x: scroll;
+    }
+
+    .program-card {
+      flex-direction: column;
+    }
+
+    .join-btn {
+      background-color: transparent;
+      color: #fff;
+      text-decoration: none;
+      width: 70%;
+      height: 50px;
+      border: 0px;
+    }
+
+    .btn-text {
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .program-title {
+      margin: 16px;
+    }
+
+    .speaker-holder {
+      padding-left: 5%;
+      padding-right: 5%;
+      display: grid;
+      grid-template-columns: 47% 47%;
+      gap: 6%;
+      margin-bottom: 48px;
+    }
+
+    .more-btn-div {
+      ma
+    }
 }

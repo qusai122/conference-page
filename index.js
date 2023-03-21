@@ -87,6 +87,12 @@ const speakers = [
     quote: 'Member of the Board of Management of BMW AG, Production',
     image: 'assits/speaker3.jpg',
   },
+  {
+    name: 'DR. MILAN NEDELJKOVIĆ',
+    about: 'Production',
+    quote: 'Member of the Board of Management of BMW AG, Production',
+    image: 'assits/speaker3.jpg',
+  },
 ];
 // console.log(speakers)
 document.querySelector('.speaker-holder').innerHTML = speakers.map((speak) => `

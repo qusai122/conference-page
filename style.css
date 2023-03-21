@@ -162,7 +162,7 @@ ul {
 }
 
 .no-margin {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .join-btn {
@@ -223,7 +223,7 @@ ul {
   flex-direction: column;
 }
 
-.summits-holder{
+.summits-holder {
   display: flex;
   gap: 8px;
   flex-direction: column;
@@ -277,9 +277,8 @@ ul {
 
 .section-line {
   width: 100%;
-  height:2px;
+  height: 2px;
   margin: 0;
-  border-width:0;
-  color:var(--light-color);
-  
+  border-width: 0;
+  color: var(--light-color);
 }

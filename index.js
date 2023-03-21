@@ -115,8 +115,6 @@ const summits = [
     message: 'CG Global summit 2020 in Dubai',
     background: 'assits/summit2.jpg',
   },
-
-
 ];
 
 // Creat summits html

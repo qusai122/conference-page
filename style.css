@@ -151,10 +151,18 @@ ul {
   margin: 0;
 }
 
+.bmw-summit-img {
+  width: 100%;
+}
+
 .title-line {
   border: 1px solid rgb(255, 64, 0);
   width: 40%;
   margin-bottom: 30px;
+}
+
+.no-margin {
+  margin-bottom: 0px;
 }
 
 .join-btn {
@@ -249,4 +257,23 @@ ul {
 
 .speaker-name {
   color: var(--primary-color);
+}
+
+.creative-section {
+  background-color: var(--white-color);
+  padding: 25px;
+}
+
+.past-summiit {
+  background-color: var(--white-color);
+  padding: 25px;
+}
+
+.section-line {
+  width: 100%;
+  height:2px;
+  margin: 0;
+  border-width:0;
+  color:var(--light-color);
+  
 }

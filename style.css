@@ -287,12 +287,10 @@ ul {
   align-items: center;
   flex-direction: column;
   gap: 12px;
-  background-repeat:no-repeat ;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  background-repeat: no-repeat;
   background-blend-mode: soft-light;
-  background-size: cover;
   background-color: var(--primary-color);
 }
 

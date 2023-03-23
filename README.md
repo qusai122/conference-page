@@ -66,6 +66,7 @@ This Project was buiilt with HTML, CSS and JavaScript
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://qusai122.github.io/conference-page/)
+- [walkthrow video](https://www.loom.com/share/5c8469aec3254c14991b6da50d96d151)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

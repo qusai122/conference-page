@@ -321,10 +321,15 @@ ul {
   display: none;
 }
 
+.partner {
+  display: none;
+}
+/* Desktop version*/
+
 @media only screen and (min-width: 768px) {
   .navbar {
     background-color: var(--white-color);
-    height: 72px;
+    height: 58px;
   }
 
   .navbar-black {
@@ -372,7 +377,7 @@ ul {
 
     .program-holder {
       flex-direction: row;
-      overflow-x: scroll;
+      overflow-x:hidden;
     }
 
     .program-card {
@@ -406,7 +411,39 @@ ul {
       margin-bottom: 48px;
     }
 
+    .speaker-card {
+      width: 80%;
+    }
+
     .more-btn-div {
       display: none;
+    }
+
+    .partner {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--dark-color);
+      width: 100%;
+      padding: 24px;
+    }
+    
+    .partner hr{
+      width: 35px;
+      margin-bottom: 16px;
+    }
+
+    .partner-img {
+      height: 50px;
+    }
+
+    .partner ul{
+      flex-direction: row;
+      display:flex;
+      justify-content: space-around;
+      gap: 12px;
+      padding: 4px;
+      padding-right: 25px;
+      margin: 0;
+      background-color: var(--dark-color);
     }
 }

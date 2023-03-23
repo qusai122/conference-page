@@ -83,10 +83,10 @@ a {
 
 .hello-section {
   padding: 25px;
-  background-image: url("./assits/hello-cars.jpg");
+  background-image: url("./assits/5229.jpg");
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
-  background-size: cover;
+  background-size: 100%;
   background-color: var(--light-color);
   padding-top: 32px;
   font-size: 24px;
@@ -333,6 +333,9 @@ footer {
   display: none;
 }
 
+.invisible {
+  display: none;
+}
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
@@ -430,6 +433,11 @@ footer {
 
   .program-card {
     flex-direction: column;
+  }
+
+  .p-card :hover {
+    border: 1px solid var(--light-color);
+    background-color: rgb(120, 120, 120, 0.7);
   }
 
   .join-btn {

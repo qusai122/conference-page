@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 💼 Portfolio <a name="about-project"></a>
+# Conference-page <a name="about-project"></a>
 
-> **Portfolio**
+> **Conference page**
 > Hello it's me Qusai Issa from Palestine<br/>
 > and this is my Conference page capstone training.
 
@@ -55,8 +55,8 @@ This Project was buiilt with HTML, CSS and JavaScript
 - **Follow HTML and CSS best practice**
 - **Display Text**
 - **Follow GitHub flow**
-<!-- TO BE CHANGED -->
-
+- **Mobile first**
+- **Desktop version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +64,7 @@ This Project was buiilt with HTML, CSS and JavaScript
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://qusai122.github.io/) <!-- TO BE CHANGED -->
+- [Live Demo Link](https://qusai122.github.io/conference-page/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +87,6 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 Use git clone command or download ZIP folder
-
 
 ### Install
 
@@ -134,7 +133,7 @@ Qusai Issa
 - GitHub: [@qusai122](https://github.com/qusai122)
 - LinkedIn: [Qusai Issa](https://www.linkedin.com/in/qusai-issa-ab5a59156/)
 
- **Isabella Otoo**
+  **Isabella Otoo**
 
 - GitHub: [@githubhandle](https://github.com/Bellagirl-maker)
 - Twitter: [@twitterhandle](https://twitter.com/isabella_otoo)
@@ -149,9 +148,7 @@ Qusai Issa
 - [ ] **making it responsive**
 - [ ] **Design for mobile First**
 - [ ] **Making it dynamic**
-<!-- TO BE CHANGED -->
-
-
+- [ ] **Creat desktop version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

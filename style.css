@@ -336,6 +336,7 @@ footer {
 .invisible {
   display: none;
 }
+
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
@@ -375,7 +376,7 @@ footer {
   .menu-list :hover {
     background-color: #d3d3d3;
     color: var(--primary-color);
-    cursor:pointer;
+    cursor: pointer;
   }
 
   #menu-icon {

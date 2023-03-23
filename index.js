@@ -7,6 +7,7 @@ const choose = ReadElement('.mobile-nav');
 const nav = ReadElement('.mobile-nav');
 const hello = ReadElement('#hello-dic');
 const more = ReadElement('#view-more');
+var x = window.matchMedia("(min-width: 768px)");
 
 function Add() {
   nav.classList.add('nav-toggle');
@@ -95,40 +96,48 @@ const speakers = [
     image: 'assits/speaker3.jpg',
   },
 ];
+
 // console.log(speakers)
-let myspeakers = speakers.slice(0,2);
-more.addEventListener("click", viewMore);
-buildSpeaker();
+
+function buildSpeaker() {
+  document.querySelector('.speaker-holder').innerHTML = myspeakers.map((speak) => `
+  <div class="container speaker-card mt-4">
+  <div class="image-holder">
+      <img class = "speaker-img" src=${speak.image} width="120" height="90%" alt="speaker 1">
+  </div>
+  <div class="speaker-info pl-4">
+      <h4 class="speaker-name">${speak.name}</h4>
+      <i class="speaker-about">${speak.about}</i>
+      <hr class="line-breaker">
+      <p class="speaker-quote">${speak.quote}</p>
+  </div>
+  </div>`).join('');
+  }
 
 function viewMore() {
   myspeakers = speakers;
   buildSpeaker();
   more.classList.add('invisible');
 }
-function buildSpeaker(){
-document.querySelector('.speaker-holder').innerHTML = myspeakers.map((speak) => `
-<div class="container speaker-card mt-4">
-<div class="image-holder">
-    <img class = "speaker-img" src=${speak.image} width="120" height="90%" alt="speaker 1">
-</div>
-<div class="speaker-info pl-4">
-    <h4 class="speaker-name">${speak.name}</h4>
-    <i class="speaker-about">${speak.about}</i>
-    <hr class="line-breaker">
-    <p class="speaker-quote">${speak.quote}</p>
-</div>
-</div>`).join('');
-}
+
+let myspeakers = speakers.slice(0, 2);
+more.addEventListener('click', viewMore);
+buildSpeaker();
 
 // remove button if it is desktop and view all by defult
 function viewAll(x) {
-  if (x.matches) { // If media query matches desktop
+  if (x.matches) { 
+    // If media query matches desktop
     viewMore();
   } else {
     //mobile
   }
 }
 
-var x = window.matchMedia("(min-width: 768px)")
-viewAll(x) // Call listener function at run time
-x.addListener(viewAll) // Attach listener function on state changes
+// Call listener function at run time
+
+viewAll(x);
+
+// Attach listener function on state changes
+
+x.addListener(viewAll);

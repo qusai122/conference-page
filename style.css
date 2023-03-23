@@ -17,6 +17,10 @@ a {
   all: unset;
 }
 
+.primary-color {
+  color: var(--primary-color);
+}
+
 .fixed-top {
   position: fixed;
   width: 100%;
@@ -324,7 +328,12 @@ ul {
 .partner {
   display: none;
 }
-/* Desktop version*/
+
+footer {
+  display: none;
+}
+
+/* Desktop version */
 
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -337,131 +346,176 @@ ul {
     width: 100%;
     height: 24px;
     background-color: var(--dark-color);
-    background: fixed;
     flex-direction: column;
+  }
 
-  }
   .navbar-black ul {
-  flex-direction: row;
-  display:flex;
-  justify-content: flex-end;
-  gap: 12px;
-  padding: 4px;
-  padding-right: 25px;
-  margin: 0;
-  background-color: var(--dark-color);
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 4px;
+    padding-right: 25px;
+    margin: 0;
+    background-color: var(--dark-color);
   }
+
   .navbar-black li {
     color: var(--white-color);
-    }
+  }
 
-    h3 {
-      margin-top: 180px;
-      font-weight: 500;
-      font-size: 48px;
-    }
+  .menu-list {
+    display: flex;
+    gap: 12px;
+  }
 
-    h2 {
-      font-weight: 700;
-      font-size: 56px;
-    }
+  #menu-icon {
+    display: none;
+  }
 
-    .hello-section {
-      padding-left: 12%;
-      padding-right: 12%;
-    }
+  .desktop-nav-item {
+    color: var(--dark-color);
+  }
 
-    .hello-dicreption {
-      width: 60%;
-    }
+  .fa-bars {
+    display: none;
+  }
 
-    .program-holder {
-      flex-direction: row;
-      overflow-x:hidden;
-    }
+  h3 {
+    margin-top: 180px;
+    font-weight: 500;
+    font-size: 48px;
+  }
 
-    .program-card {
-      flex-direction: column;
-    }
+  h2 {
+    font-weight: 700;
+    font-size: 56px;
+  }
 
-    .join-btn {
-      background-color: transparent;
-      color: #fff;
-      text-decoration: none;
-      width: 70%;
-      height: 50px;
-      border: 0px;
-    }
+  .hello-section {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 
-    .btn-text {
-      text-decoration: underline;
-      font-size: 18px;
-    }
+  .hello-dicreption {
+    width: 60%;
+  }
 
-    .program-title {
-      margin: 16px;
-    }
+  .bmw-summit-img {
+    width: 50%;
+    margin-left: 25%;
+  }
 
-    .speaker-holder {
-      padding-left: 5%;
-      padding-right: 5%;
-      display: grid;
-      grid-template-columns: 47% 47%;
-      gap: 6%;
-      margin-bottom: 48px;
-    }
+  .summits-holder {
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+  }
 
-    .speaker-card {
-      width: 80%;
-    }
+  .summit-message {
+    width: 70%;
+    font-size: 16px;
+  }
 
-    .more-btn-div {
-      display: none;
-    }
+  .program-holder {
+    flex-direction: row;
+    overflow-x: hidden;
+  }
 
-    .partner {
-      display: flex;
-      flex-direction: column;
-      background-color: var(--dark-color);
-      width: 100%;
-      padding: 24px;
-    }
-    
-    .partner hr{
-      width: 35px;
-      margin-bottom: 16px;
-    }
+  .program-card {
+    flex-direction: column;
+  }
 
-    .partner-img {
-      height: 50px;
-    }
+  .join-btn {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    width: 70%;
+    height: 50px;
+    border: 0;
+  }
 
-    .partner ul{
-      flex-direction: row;
-      display:flex;
-      justify-content: space-around;
-      gap: 12px;
-      padding: 4px;
-      padding-right: 25px;
-      margin: 0;
-      background-color: var(--dark-color);
-    }
+  .btn-text {
+    text-decoration: underline;
+    font-size: 18px;
+  }
 
-    footer {
-      background-color: var(--light-color);
-      display: flex;
-      width: 100%;
-      padding: 36px;
-      gap: 36px;
-      padding-left: 10%;
-      padding-right: 10%;      
-    }
+  .program-title {
+    margin: 16px;
+  }
 
-    footer img {
-      height: 50px;
-    }
+  .speaker-holder {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 6%;
+    margin-bottom: 48px;
+  }
 
-    footer p {
-      width: 40%;
-    }
+  .speaker-card {
+    width: 80%;
+  }
+
+  .more-btn-div {
+    display: none;
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    width: 100%;
+    padding: 24px;
+  }
+
+  .partner hr {
+    width: 35px;
+    margin-bottom: 16px;
+  }
+
+  .partner-img {
+    height: 50px;
+  }
+
+  .partner ul {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    padding: 4px;
+    padding-right: 25px;
+    margin: 0;
+    background-color: var(--dark-color);
+  }
+
+  footer {
+    background-color: var(--light-color);
+    display: flex;
+    width: 100%;
+    padding: 36px;
+    gap: 36px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .black-background {
+    background-color: var(--dark-color);
+  }
+
+  .aligment-left {
+    text-align: left;
+  }
+
+  footer img {
+    height: 50px;
+  }
+
+  footer p {
+    width: 40%;
+  }
+
+  .navbar-icon {
+    height: 16px;
+  }
 }

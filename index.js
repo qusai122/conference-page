@@ -7,7 +7,7 @@ const choose = ReadElement('.mobile-nav');
 const nav = ReadElement('.mobile-nav');
 const hello = ReadElement('#hello-dic');
 const more = ReadElement('#view-more');
-let x = window.matchMedia('(min-width: 768px)');
+const x = window.matchMedia('(min-width: 768px)');
 
 function Add() {
   nav.classList.add('nav-toggle');
@@ -130,8 +130,7 @@ function viewAll(x) {
     // If media query matches desktop
     viewMore();
   } else {
-    //mobile 
-
+    //  mobile
   }
 }
 

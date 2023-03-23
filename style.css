@@ -97,6 +97,15 @@ a {
 
 .email {
   font-size: 18px;
+  text-decoration: underline;
+}
+
+.email-tittle {
+  font-size: 18px;
+}
+
+.email-div :hover {
+  cursor: pointer;
 }
 
 h2 {

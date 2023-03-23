@@ -7,7 +7,7 @@ const choose = ReadElement('.mobile-nav');
 const nav = ReadElement('.mobile-nav');
 const hello = ReadElement('#hello-dic');
 const more = ReadElement('#view-more');
-var x = window.matchMedia("(min-width: 768px)");
+let x = window.matchMedia('(min-width: 768px)');
 
 function Add() {
   nav.classList.add('nav-toggle');
@@ -96,6 +96,7 @@ const speakers = [
     image: 'assits/speaker3.jpg',
   },
 ];
+let myspeakers = speakers.slice(0, 2);
 
 // console.log(speakers)
 
@@ -112,7 +113,7 @@ function buildSpeaker() {
       <p class="speaker-quote">${speak.quote}</p>
   </div>
   </div>`).join('');
-  }
+}
 
 function viewMore() {
   myspeakers = speakers;
@@ -120,17 +121,17 @@ function viewMore() {
   more.classList.add('invisible');
 }
 
-let myspeakers = speakers.slice(0, 2);
 more.addEventListener('click', viewMore);
 buildSpeaker();
 
 // remove button if it is desktop and view all by defult
 function viewAll(x) {
-  if (x.matches) { 
+  if (x.matches) {
     // If media query matches desktop
     viewMore();
   } else {
-    //mobile
+    //mobile 
+
   }
 }
 

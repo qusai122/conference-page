@@ -446,4 +446,22 @@ ul {
       margin: 0;
       background-color: var(--dark-color);
     }
+
+    footer {
+      background-color: var(--light-color);
+      display: flex;
+      width: 100%;
+      padding: 36px;
+      gap: 36px;
+      padding-left: 10%;
+      padding-right: 10%;      
+    }
+
+    footer img {
+      height: 50px;
+    }
+
+    footer p {
+      width: 40%;
+    }
 }

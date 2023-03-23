@@ -369,6 +369,12 @@ footer {
     gap: 12px;
   }
 
+  .menu-list :hover {
+    background-color: #d3d3d3;
+    color: var(--primary-color);
+    cursor:pointer;
+  }
+
   #menu-icon {
     display: none;
   }

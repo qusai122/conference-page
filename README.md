@@ -9,6 +9,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🎨 Design ](#design-idea)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -65,6 +66,13 @@ This Project was buiilt with HTML, CSS and JavaScript
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://qusai122.github.io/conference-page/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p>This design is called CC Global Summit 2015, and it was made by:</p>
+## 🎨 Design <a name="design-idea"></a>
+
+- [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

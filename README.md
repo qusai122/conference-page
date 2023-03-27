@@ -71,13 +71,6 @@ This Project was buiilt with HTML, CSS and JavaScript
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🎨 Design <a name="design-idea"></a>
-
-<p>This design is called CC Global Summit 2015, and it was made by:</p>
-- [Cindy Shin in Behance](https://www.behance.net/adagio07)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -144,7 +137,14 @@ Qusai Issa
 - LinkedIn: [Qusai Issa](https://www.linkedin.com/in/qusai-issa-ab5a59156/)
 
 
+## 🎨 Design <a name="design-idea"></a>
+
+<p>This design is called CC Global Summit 2015, and it was made by:</p>
+
+- [Cindy Shin in Behance](https://www.behance.net/adagio07)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- FUTURE FEATURES -->
 

@@ -6,6 +6,8 @@ const closeNav = ReadElement('.close-button');
 const choose = ReadElement('.mobile-nav');
 const nav = ReadElement('.mobile-nav');
 const hello = ReadElement('#hello-dic');
+const more = ReadElement('#view-more');
+const x = window.matchMedia('(min-width: 768px)');
 
 function Add() {
   nav.classList.add('nav-toggle');
@@ -59,8 +61,8 @@ const programs = [
 
 // Creat main programes
 document.querySelector('.program-holder').innerHTML = programs.map((program) => `
-    <div class="container p-2 ">
-        <div class="d-flex align-items-center program-card p-2">
+    <div class="container p-2 p-card">
+        <div class="d-flex align-items-center program-card p-2 ">
             <img class= "prog-icon" src=${program.icon} width="50px" height="50px" alt="lecture">
             <h4 class="program-title px-2">${program.title}</h4>
             <span class="px-1 text-white">${program.message}</span>
@@ -87,17 +89,55 @@ const speakers = [
     quote: 'Member of the Board of Management of BMW AG, Production',
     image: 'assits/speaker3.jpg',
   },
+  {
+    name: 'DR. MILAN NEDELJKOVIĆ',
+    about: 'Production',
+    quote: 'Member of the Board of Management of BMW AG, Production',
+    image: 'assits/speaker3.jpg',
+  },
 ];
+let myspeakers = speakers.slice(0, 2);
+
 // console.log(speakers)
-document.querySelector('.speaker-holder').innerHTML = speakers.map((speak) => `
-<div class="container speaker-card mt-4">
-<div class="image-holder">
-    <img class = "speaker-img" src=${speak.image} width="120" height="90%" alt="speaker 1">
-</div>
-<div class="speaker-info pl-4">
-    <h4 class="speaker-name">${speak.name}</h4>
-    <i class="speaker-about">${speak.about}</i>
-    <hr class="line-breaker">
-    <p class="speaker-quote">${speak.quote}</p>
-</div>
-</div>`).join('');
+
+function buildSpeaker() {
+  document.querySelector('.speaker-holder').innerHTML = myspeakers.map((speak) => `
+  <div class="container speaker-card mt-4">
+  <div class="image-holder">
+      <img class = "speaker-img" src=${speak.image} width="120" height="90%" alt="speaker 1">
+  </div>
+  <div class="speaker-info pl-4">
+      <h4 class="speaker-name">${speak.name}</h4>
+      <i class="speaker-about">${speak.about}</i>
+      <hr class="line-breaker">
+      <p class="speaker-quote">${speak.quote}</p>
+  </div>
+  </div>`).join('');
+}
+
+function viewMore() {
+  myspeakers = speakers;
+  buildSpeaker();
+  more.classList.add('invisible');
+}
+
+more.addEventListener('click', viewMore);
+buildSpeaker();
+
+// remove button if it is desktop and view all by defult
+function viewAll(x) {
+  if (x.matches) {
+    // If media query matches desktop
+    viewMore();
+  } else {
+    //  mobile
+  }
+}
+
+// Call listener function at run time
+
+viewAll(x);
+
+// Attach listener function on state changes
+
+x.addListener(viewAll);

@@ -22,3 +22,10 @@ document.querySelector('.summits-holder').innerHTML = summits.map((summit) => `
           </div>
       </div>
   `).join('');
+
+function ReadElement(selector) {
+  return document.querySelector(selector);
+}
+const aboutBtn = ReadElement('#about-desktop-nav');
+aboutBtn.classList.add('primary-color');
+aboutBtn.classList.remove('desktop-nav-item');
